@@ -7,19 +7,31 @@ import java.util.regex.Pattern;
 public class UserRegistration {
     static Scanner sc = new Scanner(System.in);
 
+    //validateFirstName method.
     public static void validateFirstName() {
-
         System.out.print("Enter first name: ");
         String fName = sc.next();
         String regex = "^[A-Z]{1}[a-z]*";
-
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(fName);
         boolean r = matcher.matches();
-
         if (r)
             System.out.println("It is a valid first name.");
         else
             System.out.println("It is invalid first name.");
+    }
+
+    //validateLastName method.
+    public static void validateLastName() {
+        System.out.print("Enter last name: ");
+        String lName = sc.next();
+        String regex1 = "^[A-Z]{1}[a-z]{2,}$";
+        Pattern pattern1 = Pattern.compile(regex1);
+        Matcher matcher1 = pattern1.matcher(lName);
+        boolean r = matcher1.matches();
+        if (r)
+            System.out.println("It is a valid last name.");
+        else
+            System.out.println("It is invalid last name.");
     }
 }
