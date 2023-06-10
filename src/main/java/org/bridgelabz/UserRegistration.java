@@ -174,4 +174,14 @@ public class UserRegistration {
         boolean r = matcher5.matches();
         return r;
     }
+
+    /*Junit UC7: Take Password (Password At least one Upper case and one numeric) And
+      Check It Is Getting Matched With Regex/Regular.*/
+    public boolean validatePasswordRule3(String password) {
+        String regex6 = "^(?=.*[A-Z])(?=).+$";
+        Pattern pattern6 = Pattern.compile(regex6);
+        Matcher matcher6 = pattern6.matcher(password);
+        boolean r = matcher6.matches();
+        return r;
+    }
 }
