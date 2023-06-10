@@ -120,4 +120,17 @@ public class UserRegistration {
         else
             System.out.println("It is a invalid password.");
     }
+
+    public static void emailSamples() {
+        System.out.print("Enter the email :");
+        String emailSample = sc.next();
+        String regex = "[a-zA-Z0-9_.]*[-]*[+]*[a-zA-Z0-9]*@[a-zA-Z0-9]+([.][a-zA-Z]+)+";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(emailSample);
+        boolean r = matcher.matches();
+        if (r)
+            System.out.println("Valid G-mail Address");
+        else
+            System.out.println("Invalid G-mail Address");
+    }
 }

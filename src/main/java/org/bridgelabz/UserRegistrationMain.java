@@ -17,6 +17,7 @@ public class UserRegistrationMain {
             System.out.println("6: Validate password rule 2.");
             System.out.println("7: Validate password rule 3.");
             System.out.println("8: Validate password rule 4.");
+            System.out.println("9: Validate a simple Gmail address.");
             System.out.println("0: Exit.");
             System.out.print("Enter your choice: ");
             choice = input.nextInt();
@@ -51,6 +52,9 @@ public class UserRegistrationMain {
 
                 case 8:
                     UserRegistration.validatePasswordRule4();
+                    break;
+                case 9:
+                    UserRegistration.emailSamples();
                     break;
 
                 default:
