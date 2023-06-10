@@ -143,4 +143,13 @@ public class UserRegistration {
         boolean r = m.matches();
         return r;
     }
+
+    //Junit UC2: Take Last Name And Check It Is Getting Matched With Regex/Regular
+    public static boolean validateLastName(String lName) {
+        String regex1 = "^[A-Z]{1}[a-z]{2,}$";
+        Pattern pattern1 = Pattern.compile(regex1);
+        Matcher matcher1 = pattern1.matcher(lName);
+        boolean r = matcher1.matches();
+        return r;
+    }
 }
