@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="UserRegistrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-06-10T15:19:50" hostname="CAPTAIN_KID" time="0.019">
+<testsuite name="UserRegistrationTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2023-06-10T15:33:07" hostname="CAPTAIN_KID" time="0.039">
   <properties/>
-  <testcase name="givenemailSamples_WhenProper_ShouldReturnTrue()" classname="UserRegistrationTest" time="0.019"/>
+  <testcase name="givenPasswordRule1_WhenProper_ShouldReturnTrue()" classname="UserRegistrationTest" time="0.022"/>
+  <testcase name="givenMobileNumber_WhenProper_ShouldReturnTrue()" classname="UserRegistrationTest" time="0.001"/>
+  <testcase name="givenFirstName_WhenProper_ShouldReturnTrue()" classname="UserRegistrationTest" time="0.001"/>
+  <testcase name="givenPasswordRule2_WhenProper_ShouldReturnTrue()" classname="UserRegistrationTest" time="0.001"/>
+  <testcase name="givenemailSamples_WhenProper_ShouldReturnTrue()" classname="UserRegistrationTest" time="0.001"/>
+  <testcase name="givenPasswordRule3_WhenProper_ShouldReturnTrue()" classname="UserRegistrationTest" time="0.001"/>
+  <testcase name="givenPasswordRule4_WhenProper_ShouldReturnTrue()" classname="UserRegistrationTest" time="0.001"/>
+  <testcase name="givenLastName_WhenProper_ShouldReturnTrue()" classname="UserRegistrationTest" time="0.001"/>
+  <testcase name="givenEmail_WhenProper_ShouldReturnTrue()" classname="UserRegistrationTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
