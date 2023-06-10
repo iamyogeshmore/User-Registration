@@ -15,10 +15,8 @@ public class UserRegistration {
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(fName);
         boolean r = matcher.matches();
-        if (r)
-            System.out.println("It is a valid first name.");
-        else
-            System.out.println("It is invalid first name.");
+        if (r) System.out.println("It is a valid first name.");
+        else System.out.println("It is invalid first name.");
     }
 
     //validateLastName method.
@@ -29,10 +27,8 @@ public class UserRegistration {
         Pattern pattern1 = Pattern.compile(regex1);
         Matcher matcher1 = pattern1.matcher(lName);
         boolean r = matcher1.matches();
-        if (r)
-            System.out.println("It is a valid last name.");
-        else
-            System.out.println("It is invalid last name.");
+        if (r) System.out.println("It is a valid last name.");
+        else System.out.println("It is invalid last name.");
     }
 
     //validateEmail method.
@@ -44,10 +40,8 @@ public class UserRegistration {
         Pattern pattern2 = Pattern.compile(regex2);
         Matcher matcher2 = pattern2.matcher(email);
         boolean r = matcher2.matches();
-        if (r)
-            System.out.println("It is a valid E-mail.");
-        else
-            System.out.println("It is invalid E-mail.");
+        if (r) System.out.println("It is a valid E-mail.");
+        else System.out.println("It is invalid E-mail.");
     }
 
     //validateMobileNumber method.
@@ -59,10 +53,8 @@ public class UserRegistration {
         Pattern pattern3 = Pattern.compile(regex3);
         Matcher matcher3 = pattern3.matcher(mobileNo);
         boolean r = matcher3.matches();
-        if (r)
-            System.out.println("It is a valid Mobile Number.");
-        else
-            System.out.println("It is invalid Mobile Number.");
+        if (r) System.out.println("It is a valid Mobile Number.");
+        else System.out.println("It is invalid Mobile Number.");
     }
 
     //validatePasswordRule1 method.
@@ -87,10 +79,8 @@ public class UserRegistration {
         Pattern pattern2 = Pattern.compile(regex2);
         Matcher matcher2 = pattern2.matcher(password2);
         boolean r = matcher2.matches();
-        if (r)
-            System.out.println("It is a valid password.");
-        else
-            System.out.println("It is a invalid password.");
+        if (r) System.out.println("It is a valid password.");
+        else System.out.println("It is a invalid password.");
     }
 
     //validatePasswordRule3 method (Enter The Password At Least One Uppercase And One Numeric).
@@ -101,10 +91,8 @@ public class UserRegistration {
         Pattern pattern3 = Pattern.compile(regex3);
         Matcher matcher3 = pattern3.matcher(password3);
         boolean r = matcher3.matches();
-        if (r)
-            System.out.println("It is a valid password.");
-        else
-            System.out.println("It is a invalid password.");
+        if (r) System.out.println("It is a valid password.");
+        else System.out.println("It is a invalid password.");
     }
 
     //validatePasswordRule3 method (Enter The Password At Least One Uppercase & One Numeric & One Special Character).
@@ -115,10 +103,8 @@ public class UserRegistration {
         Pattern pattern4 = Pattern.compile(regex4);
         Matcher matcher4 = pattern4.matcher(password4);
         boolean r = matcher4.matches();
-        if (r)
-            System.out.println("It is a valid password.");
-        else
-            System.out.println("It is a invalid password.");
+        if (r) System.out.println("It is a valid password.");
+        else System.out.println("It is a invalid password.");
     }
 
     //validate Sample Email method.
@@ -129,10 +115,8 @@ public class UserRegistration {
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(emailSample);
         boolean r = matcher.matches();
-        if (r)
-            System.out.println("Valid G-mail Address");
-        else
-            System.out.println("Invalid G-mail Address");
+        if (r) System.out.println("Valid G-mail Address");
+        else System.out.println("Invalid G-mail Address");
     }
 
     //Junit UC1: Take First Name And Check It Is Getting Matched With Regex/Regular
@@ -178,6 +162,16 @@ public class UserRegistration {
         Pattern pattern4 = Pattern.compile(regex4);
         Matcher matcher4 = pattern4.matcher(password);
         boolean r = matcher4.matches();
+        return r;
+    }
+
+    /*Junit UC6: Take Password (Password At least Eight Character one Upper case) And
+      Check It Is Getting Matched With Regex/Regular*/
+    public boolean validatePasswordRule2(String password) {
+        String regex5 = "^[A-Z]{1}+[a-z 0-9]{7,}$";
+        Pattern pattern5 = Pattern.compile(regex5);
+        Matcher matcher5 = pattern5.matcher(password);
+        boolean r = matcher5.matches();
         return r;
     }
 }
