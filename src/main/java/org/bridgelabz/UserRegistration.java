@@ -64,4 +64,17 @@ public class UserRegistration {
         else
             System.out.println("It is invalid Mobile Number.");
     }
+
+    public static void validatePasswordRule1() {
+        System.out.print("Enter your password: ");
+        String password = sc.next();
+        String regex = "^[A-Z a-z 0-9]{8,}$";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(password);
+        if (matcher.find()) {
+            System.out.println("Match found");
+        } else {
+            System.out.println("Match not found");
+        }
+    }
 }
