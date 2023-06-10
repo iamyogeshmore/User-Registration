@@ -65,6 +65,7 @@ public class UserRegistration {
             System.out.println("It is invalid Mobile Number.");
     }
 
+    //validatePasswordRule1 method.
     public static void validatePasswordRule1() {
         System.out.print("Enter your password: ");
         String password = sc.next();
@@ -76,5 +77,19 @@ public class UserRegistration {
         } else {
             System.out.println("Match not found");
         }
+    }
+
+    //validatePasswordRule2 method (Enter The Password At Least Eight Character One Upper Case).
+    public static void validatePasswordRule2() {
+        System.out.print("Enter The Password At Least Eight Character One Upper Case: ");
+        String password2 = sc.nextLine();
+        String regex2 = "^[A-Z]{1}+[a-z 0-9]{7,}$";
+        Pattern pattern2 = Pattern.compile(regex2);
+        Matcher matcher2 = pattern2.matcher(password2);
+        boolean r = matcher2.matches();
+        if (r)
+            System.out.println("It is a valid password.");
+        else
+            System.out.println("It is a invalid password.");
     }
 }

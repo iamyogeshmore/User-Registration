@@ -14,6 +14,7 @@ public class UserRegistrationMain {
             System.out.println("3: Validate E-mail.");
             System.out.println("4: Validate phone number.");
             System.out.println("5: Validate password rule 1.");
+            System.out.println("6: Validate password rule 2.");
             System.out.println("0: Exit.");
             System.out.print("Enter your choice: ");
             choice = input.nextInt();
@@ -36,6 +37,10 @@ public class UserRegistrationMain {
 
                 case 5:
                     UserRegistration.validatePasswordRule1();
+                    break;
+
+                case  6:
+                    UserRegistration.validatePasswordRule2();
                     break;
 
                 default:
