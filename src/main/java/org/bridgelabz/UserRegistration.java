@@ -121,6 +121,7 @@ public class UserRegistration {
             System.out.println("It is a invalid password.");
     }
 
+    //validate Sample Email method.
     public static void emailSamples() {
         System.out.print("Enter the email :");
         String emailSample = sc.next();
@@ -132,5 +133,14 @@ public class UserRegistration {
             System.out.println("Valid G-mail Address");
         else
             System.out.println("Invalid G-mail Address");
+    }
+
+    //Junit UC1: Take First Name And Check It Is Getting Matched With Regex/Regular
+    public static boolean validateFirstName(String fname) {
+        String regex = "^[A-Z]{1}[a-z]*";
+        Pattern p = Pattern.compile(regex);
+        Matcher m = p.matcher(fname);
+        boolean r = m.matches();
+        return r;
     }
 }
