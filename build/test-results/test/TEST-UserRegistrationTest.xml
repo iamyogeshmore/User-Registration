@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="UserRegistrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-06-10T15:17:38" hostname="CAPTAIN_KID" time="0.019">
+<testsuite name="UserRegistrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-06-10T15:19:50" hostname="CAPTAIN_KID" time="0.019">
   <properties/>
-  <testcase name="givenPasswordRule4_WhenProper_ShouldReturnTrue()" classname="UserRegistrationTest" time="0.019"/>
+  <testcase name="givenemailSamples_WhenProper_ShouldReturnTrue()" classname="UserRegistrationTest" time="0.019"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
